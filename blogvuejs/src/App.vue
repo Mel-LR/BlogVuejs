@@ -3,12 +3,39 @@
     <div id="nav" class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+          <router-link to="/about">About</router-link> |
+          <router-link to="/addBlog">Add blog</router-link>
         </nav>
     </div>
     <router-view/>
   </div>
 </template>
+
+
+<script>
+import Home from './views/Home.vue'
+import About from './views/About.vue'
+
+export default {
+  data() {
+    return {
+      page: 'Home',
+      pages: [
+        {
+          name: 'Home',
+          compo: Home
+        },
+        {
+          name: 'Home',
+          compo: About
+        }
+      ]
+    }
+  }
+}
+</script>
+
+
 
 <style>
 #app {

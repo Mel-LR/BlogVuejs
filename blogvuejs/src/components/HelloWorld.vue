@@ -10,7 +10,7 @@
             <h3 class="mb-0">{{ post.author }}</h3>
             <div class="mb-1 text-muted">{{ post.publishedAt }}</div>
             <p class="card-text mb-auto">{{ post.content }}</p>
-            <router-link :to="{path: '/post/'+index}">Lire +</router-link>
+            <router-link :to="{path: '/post/'+(post.id-1)}">Lire +</router-link>
           </div>
         </div>
       </div>
