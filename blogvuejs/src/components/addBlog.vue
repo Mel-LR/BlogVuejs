@@ -4,10 +4,10 @@
         <form>
             <!-- Title -->
             <label>Title:</label>
-            <input type="text" v-model.lazy="blog.title" required />
+            <input type="text" v-model="blog.title" required />
             <!-- Content -->
             <label>Content:</label>
-            <textarea v-model.lazy="blog.content"></textarea>
+            <textarea v-model="blog.content"></textarea>
 
             <!-- Checkboxes -->
             <div id="checkboxes">
@@ -31,7 +31,7 @@
 
             <!-- Author -->
             <label>Author:</label>
-            <input type="text" v-model.lazy="blog.author" required />
+            <input type="text" v-model="blog.author" required />
         </form>
 
         <!-- Preview of the blog content -->
